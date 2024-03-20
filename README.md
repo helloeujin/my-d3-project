@@ -43,6 +43,8 @@ const svg = d3.select("body")
   .attr("height", 500) 
 ```
 
+<br />
+
 ### 선택자 사용하기
 
 - `d3.select` 또는 `d3.selectAll` 함수를 사용하여 DOM 내의 요소 선택할 수 있습니다.
@@ -66,6 +68,8 @@ const circles = svg.selectAll("circle")
 	   .data(data)
 	   .enter()
 ```
+
+<br />
 
 ### 그래픽 요소 **만들기**
 
@@ -99,6 +103,8 @@ D3는 `.on()` 함수를 사용하여 DOM 요소에 이벤트를 추가합니다.
 
 - `mouseover` → 마우스가 원 위에 올라갈 때 이벤트가 발생합니다
 - `mouseout` → 마우스가 원에서 벗어날 때 이벤트가 발생합니다
+
+  <br />
 
 ### **전환(Transition) 추가**
 
