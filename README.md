@@ -13,6 +13,7 @@ npm install d3
 ```bash
 import * as d3 from "d3";
 ```
+<br />
 
 ## 1. 데이터 준비하기
 
