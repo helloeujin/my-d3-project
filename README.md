@@ -89,7 +89,7 @@ circles
 
 완성하면 아래와 같이 그래픽 요소들이 만들어집니다.
 
-![출처: 작가](https://prod-files-secure.s3.us-west-2.amazonaws.com/9bc85f59-fd6d-44a5-a575-1befd5c59eba/3e8d7177-834a-4050-a408-3a0b0323a473/Screenshot_2024-01-10_at_3.04.10_PM.png)
+<img width="508" alt="Screenshot 2024-01-10 at 3 04 10 PM" src="https://github.com/helloeujin/my-d3-project/assets/2341775/988855b5-e7fc-40cf-8f06-47b3d1efe22b">
 
 출처: 작가
 
