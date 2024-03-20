@@ -186,3 +186,51 @@ circles.on("mouseout", function () {
     .attr("r", (d) => d.radius);
 });
 ```
+
+<br />
+
+## JSON 테스트해보기
+```
+[
+  {
+    "fruit": "사과",
+    "quantity": 20,
+    "details": {
+      "color": "red",
+      "price": 1.2
+    }
+  },
+  {
+    "fruit": "바나나",
+    "quantity": 40,
+    "details": {
+      "color": "yellow",
+      "price": 0.8
+    }
+  },
+  {
+    "fruit": "체리",
+    "quantity": 60,
+    "details": {
+      "color": "red",
+      "price": 2.5
+    }
+  },
+  {
+    "fruit": "딸기",
+    "quantity": 80,
+    "details": {
+      "color": "red",
+      "price": 1.8
+    }
+  },
+  {
+    "fruit": "포도",
+    "quantity": 100,
+    "details": {
+      "color": "purple",
+      "price": 2.0
+    }
+  }
+]
+```
