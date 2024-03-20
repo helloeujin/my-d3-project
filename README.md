@@ -130,3 +130,59 @@ circles.on("mouseout", function() {
       .attr("r", d => d.radius)              
 });
 ```
+
+
+<br />
+
+## 완성된 파일 살펴보기
+
+다음은 완성된 `main.js` 파일입니다.
+
+```jsx
+import * as d3 from "d3";
+
+// SVG 캔버스 생성 및 설정
+const svg = d3
+  .select("body")
+  .append("svg")
+  .attr("width", 500)
+  .attr("height", 500);
+
+// 객체 배열 데이터
+const data = [
+  { x: 50, y: 50, radius: 40 },
+  { x: 150, y: 150, radius: 30 },
+  { x: 250, y: 250, radius: 50 },
+  { x: 350, y: 350, radius: 20 },
+  { x: 450, y: 450, radius: 40 },
+];
+
+// 데이터에 기반한 원 생성
+const circles = svg
+  .selectAll("circle")
+  .data(data)
+  .enter()
+  .append("circle")
+  .attr("cx", (d) => d.x) // 객체의 x 속성을 원의 x 좌표로 사용
+  .attr("cy", 250) // 객체의 y 속성을 원의 y 좌표로 사용
+  .attr("r", (d) => d.radius) // 객체의 radius 속성을 원의 반지름으로 사용
+	.attr("fill", "blue") // 원의 색상 설정
+  .attr("stroke", "black")
+  .attr("stroke-width", 3);
+
+// 마우스 오버 이벤트: 원의 크기와 색상을 변경
+circles.on("mouseover", function () {
+  d3.select(this)
+    .transition()
+    .duration(500)
+    .attr("r", (d) => d.radius * 2);
+});
+
+// 마우스 아웃 이벤트: 원을 원래 크기와 색상으로 복원
+circles.on("mouseout", function () {
+  d3.select(this)
+    .transition()
+    .duration(500)
+    .attr("r", (d) => d.radius);
+});
+```
